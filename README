@@ -1,5 +1,7 @@
 INSTALLATION
 
+**NEED TO INSTALL PYTHON FIRST**
+
 1. Download ffmpeg.zip dari sini (Windows build):
 - https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
 Ekstrak, ke: C:\ffmpeg\
@@ -20,20 +22,28 @@ https://github.com/yt-dlp/yt-dlp/releases
 C:\Users\<NAMA_KAMU>\AppData\Local\Google\Chrome\User Data\NativeMessagingHosts\
 Jika folder NativeMessagingHosts tidak ada, buat folder baru dengan nama tersebut.
 
-4. 
+4. Pastikan Path Python Host Valid
+- Buka: C:\Users\<NAMA_KAMU>\AppData\Local\Google\Chrome\User Data\NativeMessagingHosts\com.yt-dlp.yt-dlp.json
+- Periksa bagian "path" dan pastikan itu mengarah ke lokasi yang benar dari host.py yang telah Anda unduh.
+contoh : "C:\\lokasi kamu\\YT-Native-Downloader\\host\\host.py"
 
-# PENTING
-Jika Anda menggunakan Windows, pastikan untuk mengunduh versi yang sesuai dengan arsitektur sistem Anda (32-bit atau 64-bit).
+5. Pastikan ID Extension Valid
+- Buka: C:\Users\<NAMA_KAMU>\AppData\Local\Google\Chrome\User Data\NativeMessagingHosts\com.yt-dlp.yt-dlp.json
+- Periksa bagian "allowed_origins" dan pastikan itu sesuai dengan ID ekstensi Anda.
+contoh : "chrome-extension://jakcbffongpgkidpcmfppbgcljfjkodj/"
 
-*NOTE*
-JIKA YT DLP TIDAK BERFUNGSI, PASTIKAN ANDA SUDAH MENGINSTALL FFmpeg DI ATAS
+6. Install Register windows yang ada di dalam folder :
+C:\Users\<NAMA_KAMU>\AppData\Local\Google\Chrome\User Data\NativeMessagingHosts\com.yt-dlp.yt-dlp.reg
 
+7. Restart Chrome
 
+8. Buka Chrome dan buka halaman ekstensi (chrome://extensions/)
 
+9. Aktifkan mode pengembang (Developer mode) di pojok kanan atas.
 
+10. Klik "Load unpacked" dan pilih folder ekstensi yang telah Anda unduh.
 
-
-
+11. Setelah ekstensi dimuat, Anda dapat menggunakannya untuk mengunduh video dari berbagai situs web.
 
 
 
@@ -50,4 +60,8 @@ https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
 #FFMPEG (Linux build)
 https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
 
+# PENTING
+Jika Anda menggunakan Windows, pastikan untuk mengunduh versi yang sesuai dengan arsitektur sistem Anda (32-bit atau 64-bit).
 
+*NOTE*
+JIKA YT DLP TIDAK BERFUNGSI, PASTIKAN ANDA SUDAH MENGINSTALL FFmpeg DI ATAS
