@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "YT URL Copy & Downloader",
+  "version": "1.1",
+  "description": "Copy YouTube video URL and optionally download",
+  "permissions": ["nativeMessaging", "contextMenus", "scripting", "tabs", "clipboardWrite"],
+  "host_permissions": ["*://www.youtube.com/watch*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}

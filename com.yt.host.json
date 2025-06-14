@@ -1,0 +1,9 @@
+{
+  "name": "com.yt.host",
+  "description": "YT Native Host",
+  "path": "C:\\xampp\\htdocs\\YT-Native-Downloader_FIX\\host\\host.py",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://jakcbffongpgkidpcmfppbgcljfjkodj/"
+  ]
+}
