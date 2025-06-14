@@ -68,7 +68,7 @@ Edit
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/bugarwahyu/yt-native-downloader/main/assets/screenshot-popup.png" width="450" alt="Popup UI Preview" />
-<img src="https://raw.githubusercontent.com/wxyydesu/YT-Native-Downloader_fix/main/assets/InSELECT.png" width="450" alt="Popup UI Preview" />
+<img src="https://github.com/wxyydesu/YT-Native-Downloader_fix/blob/fe32df9fbce45dbbfc69d8dce43ba822a499e20e/Assets/InSELECT.PNG" width="450" alt="Popup UI Preview" />
 </p>
 
 ---
