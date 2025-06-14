@@ -1,67 +1,84 @@
-INSTALLATION
+<p align="center">
+  <img src="https://raw.githubusercontent.com/bugarwahyu/yt-native-downloader/main/assets/logo.svg" alt="Logo" width="150" />
+</p>
 
-**NEED TO INSTALL PYTHON FIRST**
+<h1 align="center">YT Native Downloader</h1>
 
-1. Download ffmpeg.zip dari sini (Windows build):
-- https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
-Ekstrak, ke: C:\ffmpeg\
+<p align="center">
+  🎥 Chrome Extension + Python Native Messaging untuk mengunduh video/audio dari YouTube secara lokal (MP4 & MP3), tanpa server!
+</p>
 
-Tambahkan ke PATH:
+<p align="center">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python" /></a>
+  <a href="https://github.com/yt-dlp/yt-dlp"><img src="https://img.shields.io/badge/yt--dlp-powered-lightgrey?logo=youtube" /></a>
+  <a href="https://www.gyan.dev/ffmpeg/builds/"><img src="https://img.shields.io/badge/FFmpeg-enabled-brightgreen?logo=ffmpeg" /></a>
+  <img src="https://img.shields.io/badge/platform-Windows-lightblue" />
+</p>
 
-- Buka: Control Panel > System > Environment Variables
+---
 
-- Edit Path > Klik New
+## ⚙️ Fitur
+- ✅ Download video/audio dari YouTube dengan sekali klik
+- 🧠 Terintegrasi dengan `yt-dlp` dan `ffmpeg`
+- 🔒 Proses berjalan lokal 100% (tanpa API/server)
+- 🧩 Komunikasi antara Chrome ↔ Python (Native Messaging)
+- 🖥️ Dirancang untuk sistem Windows
 
-- Tambahkan: C:\ffmpeg\bin
+---
 
-2. Download yt-dlp.exe dari sini:
-- Jika tidak Berfungsi, Replace Dengan mengunduh versi terbaru dari tautan berikut:
-https://github.com/yt-dlp/yt-dlp/releases
+## 🔧 Cara Instalasi
 
-3. Pindahkan com.yt-dlp.yt-dlp ke dalam :
-C:\Users\<NAMA_KAMU>\AppData\Local\Google\Chrome\User Data\NativeMessagingHosts\
-Jika folder NativeMessagingHosts tidak ada, buat folder baru dengan nama tersebut.
+### 1. Install FFmpeg
+- Unduh: [ffmpeg-release-essentials.zip](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip)
+- Ekstrak ke folder: `C:\ffmpeg\`
+- Tambahkan ke PATH:
+Control Panel > System > Environment Variables > Edit Path > New
+Tambahkan: C:\ffmpeg\bin
 
-4. Pastikan Path Python Host Valid
-- Buka: C:\Users\<NAMA_KAMU>\AppData\Local\Google\Chrome\User Data\NativeMessagingHosts\com.yt-dlp.yt-dlp.json
-- Periksa bagian "path" dan pastikan itu mengarah ke lokasi yang benar dari host.py yang telah Anda unduh.
-contoh : "C:\\lokasi kamu\\YT-Native-Downloader\\host\\host.py"
+markdown
+Copy
+Edit
 
-5. Pastikan ID Extension Valid
-- Buka: C:\Users\<NAMA_KAMU>\AppData\Local\Google\Chrome\User Data\NativeMessagingHosts\com.yt-dlp.yt-dlp.json
-- Periksa bagian "allowed_origins" dan pastikan itu sesuai dengan ID ekstensi Anda.
-contoh : "chrome-extension://jakcbffongpgkidpcmfppbgcljfjkodj/"
+### 2. Download yt-dlp
+- Unduh versi terbaru dari:
+[https://github.com/yt-dlp/yt-dlp/releases](https://github.com/yt-dlp/yt-dlp/releases)
 
-6. Install Register windows yang ada di dalam folder :
-C:\Users\<NAMA_KAMU>\AppData\Local\Google\Chrome\User Data\NativeMessagingHosts\com.yt-dlp.yt-dlp.reg
+### 3. Konfigurasi Native Messaging
+- Pindahkan file `com.yt-dlp.yt-dlp.json` ke:
+C:\Users<NAMA_KAMU>\AppData\Local\Google\Chrome\User Data\NativeMessagingHosts\
 
-7. Restart Chrome
+yaml
+Copy
+Edit
+- Edit bagian:
+- `"path"` → arahkan ke lokasi `host.py`
+- `"allowed_origins"` → sesuaikan dengan ID ekstensi kamu
 
-8. Buka Chrome dan buka halaman ekstensi (chrome://extensions/)
+### 4. Jalankan File Registry
+- Jalankan `com.yt-dlp.yt-dlp.reg` untuk mendaftarkan host
 
-9. Aktifkan mode pengembang (Developer mode) di pojok kanan atas.
+### 5. Load Ekstensi di Chrome
+- Buka `chrome://extensions/`
+- Aktifkan **Developer Mode**
+- Klik **Load unpacked**, lalu pilih folder `extension/`
 
-10. Klik "Load unpacked" dan pilih folder ekstensi yang telah Anda unduh.
+---
 
-11. Setelah ekstensi dimuat, Anda dapat menggunakannya untuk mengunduh video dari berbagai situs web.
+## 🖼️ Screenshot
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/bugarwahyu/yt-native-downloader/main/assets/screenshot-popup.png" width="450" alt="Popup UI Preview" />
+</p>
 
+---
 
-SOURCE
+## 📁 Sumber Utama
+- 🧰 yt-dlp: [yt-dlp/releases](https://github.com/yt-dlp/yt-dlp/releases)
+- 🎞️ FFmpeg (Windows): [gyan.dev](https://www.gyan.dev/ffmpeg/builds/)
+- 🐧 FFmpeg (Linux): [johnvansickle.com](https://johnvansickle.com/ffmpeg/releases/)
 
-#YT-DLP
-https://github.com/yt-dlp/yt-dlp/releases
+---
 
-#FFMPEG
-https://www.gyan.dev/ffmpeg/builds/ 
+## 💻 Lisensi
 
-#FFMPEG (Windows build)
-https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
-#FFMPEG (Linux build)
-https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
-
-# PENTING
-Jika Anda menggunakan Windows, pastikan untuk mengunduh versi yang sesuai dengan arsitektur sistem Anda (32-bit atau 64-bit).
-
-*NOTE*
-JIKA YT DLP TIDAK BERFUNGSI, PASTIKAN ANDA SUDAH MENGINSTALL FFmpeg DI ATAS
+MIT © [Bugar Wahyu](https://github.com/bugarwahyu)
