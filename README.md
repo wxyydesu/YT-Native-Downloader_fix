@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/bugarwahyu/yt-native-downloader/main/assets/logo.svg" alt="Logo" width="150" />
+  <img src="https://github.com/wxyydesu/YT-Native-Downloader_fix/blob/fbff77e987ecb3d966eca1f1a952cf7ec7ca1389/Assets/logo.png" alt="Logo" width="150" />
 </p>
 
 <h1 align="center">YT Native Downloader</h1>
@@ -67,7 +67,7 @@ Edit
 ## 🖼️ Screenshot
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/bugarwahyu/yt-native-downloader/main/assets/screenshot-popup.png" width="450" alt="Popup UI Preview" />
+<img src="https://github.com/wxyydesu/YT-Native-Downloader_fix/blob/fbff77e987ecb3d966eca1f1a952cf7ec7ca1389/Assets/UI.PNG" width="450" alt="Popup UI Preview" />
 <img src="https://github.com/wxyydesu/YT-Native-Downloader_fix/blob/fe32df9fbce45dbbfc69d8dce43ba822a499e20e/Assets/InSELECT.PNG" width="450" alt="Popup UI Preview" />
 </p>
 
