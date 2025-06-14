@@ -13,16 +13,38 @@ document.getElementById("checkUpdate").addEventListener("click", () => {
   const updateStatus = document.getElementById("update-status");
   updateStatus.textContent = "Checking...";
 
-  fetch("https://github.com/wxyydesu/YT-Native-Downloader_fix/releases/latest")
+  fetch("https://api.github.com/repos/wxyydesu/YT-Native-Downloader_fix/releases/latest")
     .then(response => response.json())
     .then(data => {
-      const latestVersion = data.tag_name || data.name;
+      console.log("GitHub API response:", data); // Debug log
+
+      // Ambil versi terbaru dan hilangkan awalan "v" kalau ada
+      const latestVersionRaw = data.tag_name || data.name || "";
+      const latestVersion = latestVersionRaw.replace(/^v/i, "").trim();
+
+      const localVersion = "1.1";
       updateStatus.textContent = "Latest: " + latestVersion;
 
-      // Bandingkan dengan versi lokal
-      const localVersion = "1.1"; // Atur versi lokal manual di sini
-      if (latestVersion && latestVersion !== localVersion) {
+      // Jika update tersedia
+      if (latestVersion !== localVersion) {
         updateStatus.textContent += " 🚀 Update tersedia!";
+
+        // Hapus tombol sebelumnya jika ada
+        const existingBtn = document.getElementById("update-button");
+        if (existingBtn) existingBtn.remove();
+
+        // Tambah tombol update
+        const updateBtn = document.createElement("button");
+        updateBtn.textContent = "Download Update";
+        updateBtn.className = "button";
+        updateBtn.id = "update-button";
+        updateBtn.style.marginTop = "8px";
+        updateBtn.onclick = () => {
+          chrome.tabs.create({ url: data.html_url });
+        };
+
+        updateStatus.appendChild(document.createElement("br"));
+        updateStatus.appendChild(updateBtn);
       } else {
         updateStatus.textContent += " ✅ Kamu sudah pakai versi terbaru.";
       }

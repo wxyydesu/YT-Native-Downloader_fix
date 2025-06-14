@@ -3,8 +3,18 @@
   "name": "YT URL Copy & Downloader",
   "version": "1.1",
   "description": "Copy YouTube video URL and optionally download",
-  "permissions": ["nativeMessaging", "contextMenus", "scripting", "tabs", "clipboardWrite"],
-  "host_permissions": ["*://www.youtube.com/watch*"],
+  "permissions": [
+    "nativeMessaging",
+    "contextMenus",
+    "scripting",
+    "tabs",
+    "clipboardWrite",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/watch*",
+    "https://api.github.com/repos/wxyydesu/YT-Native-Downloader_fix/releases/latest"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {

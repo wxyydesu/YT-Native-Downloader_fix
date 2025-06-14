@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/wxyydesu/YT-Native-Downloader_fix/blob/fbff77e987ecb3d966eca1f1a952cf7ec7ca1389/Assets/logo.png" alt="Logo" width="150" />
+  <img src="https://raw.githubusercontent.com/wxyydesu/YT-Native-Downloader_fix/main/Assets/logo.png" alt="Logo" width="150" />
 </p>
 
 <h1 align="center">YT Native Downloader</h1>
@@ -82,4 +82,4 @@ Edit
 
 ## 💻 Lisensi
 
-MIT © [Bugar Wahyu](https://github.com/bugarwahyu)
+MIT © [WXYYDESU](https://github.com/wxyydesu)
