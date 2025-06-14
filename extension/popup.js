@@ -13,7 +13,7 @@ document.getElementById("checkUpdate").addEventListener("click", () => {
   const updateStatus = document.getElementById("update-status");
   updateStatus.textContent = "Checking...";
 
-  fetch("https://api.github.com/repos/BugarDev/YT-Native-Downloader/releases/latest")
+  fetch("https://github.com/wxyydesu/YT-Native-Downloader_fix/releases/latest")
     .then(response => response.json())
     .then(data => {
       const latestVersion = data.tag_name || data.name;
